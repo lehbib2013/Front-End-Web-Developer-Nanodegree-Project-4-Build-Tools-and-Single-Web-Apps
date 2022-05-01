@@ -11,16 +11,16 @@ import './styles/header.scss'
 import img from '../client/views/images/logo1.png'
 
 export default (function () {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         let mainform = document.querySelector('#results');
         let submit_buttton = document.querySelector('#submit-button');
         let input_url = document.querySelector('#input-url');
         console.log(mainform);
         let widthMainForm = window.innerWidth;
         console.log("Calc");
-        console.log(widthMainForm/3);
-        submit_buttton.style.width = (widthMainForm/3)+"px";
-        input_url.style.width = (widthMainForm/3)+"px";
+        console.log(widthMainForm / 3);
+        submit_buttton.style.width = (widthMainForm / 3) + "px";
+        input_url.style.width = (widthMainForm / 3) + "px";
     });
 }());
 
@@ -32,7 +32,7 @@ export {
     submitHandler,
     isValidURL,
     img
-    
-   
-   }
-  
+
+
+}
+

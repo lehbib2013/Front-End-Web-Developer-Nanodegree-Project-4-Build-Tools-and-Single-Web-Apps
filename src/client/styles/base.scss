@@ -4,72 +4,79 @@ body {
     min-height: 100vh;
 }
 
-.button {
-    
-}
+.button {}
+
 main {
     display: flex;
     flex-direction: column;
-    
+
     section {
-        
+
         #main-form {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         strong {
-            color:blue;
-            margin-left:10px;
-            border:0px dotted red;
+            color: blue;
+            margin-left: 10px;
+            border: 0px dotted red;
         }
+
         #name {
-              background-color:azure;
-              }
+            background-color: azure;
+        }
+
         #errors-feedback {
-            background-color :mistyrose;
+            background-color: mistyrose;
             display: none;
-              }
+        }
+
         #results {
             display: none;
-            border:0px dotted red;
-            margin-top:5px;
+            border: 0px dotted red;
+            margin-top: 5px;
             margin-left: 10px;
-            padding-bottom:20px;
+            padding-bottom: 20px;
             margin-bottom: 10px;
             background-color: orange;
+
             .list-semantic {
-                border:0px dotted blue;
+                border: 0px dotted blue;
                 background-color: white;
                 border-radius: 10px;
-                margin-top:20px;
-                margin-bottom:20px;
-                margin-left:20px;
-                margin-right:20px;
-                
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+
                 list-style-position: outside;
                 list-style-type: disc;
+
                 li {
-                    margin:20px;
-                    
+                    margin: 20px;
+
                 }
             }
         }
-            }
-     }
-     
+    }
+}
+
 section {
     width: 90vw;
     margin: 50px auto;
+
     strong {
         font-size: 2.1rem;
         color: darkblue;
     }
 }
+
 .container {
-    display:flex;
-    border:0px;
-    padding:5px;
+    display: flex;
+    border: 0px;
+    padding: 5px;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 }

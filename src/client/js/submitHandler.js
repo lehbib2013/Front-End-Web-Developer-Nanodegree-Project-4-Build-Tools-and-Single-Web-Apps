@@ -1,14 +1,14 @@
 const submitHandler = async (event) => {
-    let  apiConfig={};
+    let apiConfig = {};
     console.log("hiii");
     event.preventDefault();
     const urlToAnalyse = document.getElementById('input-url').value;
-     await Client.getConfig().then((data)=>{
-         console.log('apiConfig')
-         const rr = data;
-         console.log(rr)
-         apiConfig = rr;
-    }).catch((error)=>{
+    await Client.getConfig().then((data) => {
+        console.log('apiConfig')
+        const rr = data;
+        console.log(rr)
+        apiConfig = rr;
+    }).catch((error) => {
         console.log('error apiConfig')
         console.log(error)
         document.querySelectorAll('.error')[0].style.display = "block";
@@ -16,8 +16,8 @@ const submitHandler = async (event) => {
         document.getElementById('error-descroption').innerHTML = error;
     });
     console.log('URL to be analyzed :');
-    console.log(apiConfig.application_url + apiConfig.application_key+'&url='+urlToAnalyse);
-    Client.readInfos(apiConfig.application_url, apiConfig.application_key+'&url=', urlToAnalyse).then((data)=>{
+    console.log(apiConfig.application_url + apiConfig.application_key + '&url=' + urlToAnalyse);
+    Client.readInfos(apiConfig.application_url, apiConfig.application_key + '&url=', urlToAnalyse).then((data) => {
         console.log("final data");
         console.log(data);
         document.querySelectorAll('#errors-feedback')[0].style.display = "none";
@@ -27,14 +27,14 @@ const submitHandler = async (event) => {
         document.getElementById('polarity').innerHTML = data.poloarity;
         document.getElementById('irony').innerHTML = data.irony;
         document.getElementById('agreement').innerHTML = data.agreement;
-    }).catch((error)=>{
+    }).catch((error) => {
         console.log("errors final data");
         console.log(error);
         document.querySelectorAll('#errors-feedback')[0].style.display = "block";
         document.querySelectorAll('#results')[0].style.display = "none";
         document.getElementById('error-descroption').innerHTML = error;
-        
-      });
+
+    });
 }
 
 export { submitHandler }

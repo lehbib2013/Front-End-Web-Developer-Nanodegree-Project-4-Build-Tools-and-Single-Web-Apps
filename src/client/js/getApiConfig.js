@@ -5,11 +5,11 @@ const getConfig = async () => {
         console.log("getConfig Api Call ");
         const ret = await response.json();
         console.log(ret);
-       
-       return ret;
-        } catch(error) {
-       console.log("getConfig Api Call error");
-       console.log("error", error);
+
+        return ret;
+    } catch (error) {
+        console.log("getConfig Api Call error");
+        console.log("error", error);
     }
 }
-export {getConfig}
+export { getConfig }

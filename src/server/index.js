@@ -5,11 +5,11 @@ dotenv.config();
 // You could call it aylienapi, or anything else
 var meaningapi = {
     application_key: process.env.API_KEY
-  };
-const apiInfos= {
+};
+const apiInfos = {
     application_url: "https://api.meaningcloud.com/sentiment-2.1?of=json&lang=auto&key=",
     application_key: process.env.API_KEY
-} 
+}
 
 var path = require('path')
 const express = require('express')
