@@ -8,6 +8,7 @@ describe("Testing the validation functionality", () => {
     test("Testing the validateInputUrl() function", () => {
         // call function with wrong parameter value to expect error result
         const data = isValidURL('hhh://jkj');
+        console.log(data);
         // assert  the false value returned by this function because url  argument is not valid url
         expect(data).toEqual(false);
 

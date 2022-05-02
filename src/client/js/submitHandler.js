@@ -1,10 +1,10 @@
+jest.useFakeTimers();
 const submitHandler = async (event) => {
     let apiConfig = {};
     console.log("hiii");
     event.preventDefault();
     const urlToAnalyse = document.getElementById('input-url').value;
     if (urlToAnalyse) {
-
 
         await Client.getConfig().then((data) => {
             console.log('apiConfig')

@@ -1,3 +1,4 @@
+jest.useFakeTimers();
 const readInfos = async (baseUrl, apiKey, urlToAnalyse) => {
   const isValid = Client.isValidURL(urlToAnalyse);
   console.log("isValid");
